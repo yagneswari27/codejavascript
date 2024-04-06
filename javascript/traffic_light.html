@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    background-color: #86d2f2;
+    height: 100vh;
+    padding: 20px;
+}
+
+.button {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 10px;
+    border-width: 0px;
+    background-color: #1f1d41;
+    color: white;
+    font-family: 'Roboto';
+    margin-top: 28px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #4b5069;
+    margin: 22px;
+    border-radius: 30px;
+}
+
+.card1 {
+    width: 90px;
+    height: 250px;
+    margin-left: 30px;
+    background-color: #1f1d41;
+    border-radius: 30px;
+
+}
+
+.heading {
+    color: #1f1d41;
+    font-weight: 700;
+    font-family: 'Roboto';
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="bg-container">
+        <h1 class="heading">Traffic Light</h1>
+        <div class="d-flex flex-row justify-content-center mt-5">
+            <div class="d-flex flex-column">
+                <button class="button" id="stopButton" onclick="stopButton()">Stop</button>
+                <button class="button" id="readyButton" onclick="readyButton()">Ready</button>
+                <button class="button" id="goButton" onclick="goButton()">Go</button>
+            </div>
+            <div class="card1">
+                <div class="circle" id="stopLight"></div>
+                <div class="circle" id="readyLight"></div>
+                <div class="circle" id="goLight"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function stopButton() {
+    document.getElementById('stopButton').style.backgroundColor = "#cf1124";
+    document.getElementById('stopLight').style.backgroundColor = "#cf1124";
+    document.getElementById('readyButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('readyLight').style.backgroundColor = "#4b5069";
+    document.getElementById('goButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('goLight').style.backgroundColor = "#4b5069";
+
+}
+
+function readyButton() {
+    document.getElementById('readyButton').style.backgroundColor = "#f7c948";
+    document.getElementById('readyLight').style.backgroundColor = "#f7c948";
+    document.getElementById('stopButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('stopLight').style.backgroundColor = "#4b5069";
+    document.getElementById('goButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('goLight').style.backgroundColor = "#4b5069";
+
+
+}
+
+function goButton() {
+    document.getElementById('goButton').style.backgroundColor = "#199473";
+    document.getElementById('goLight').style.backgroundColor = "#199473";
+    document.getElementById('readyButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('readyLight').style.backgroundColor="#4b5069";
+    document.getElementById('stopButton').style.backgroundColor = "#1f1d41";
+    document.getElementById('stopLight').style.backgroundColor = "#4b5069";
+
+
+
+
+}
+    </script>
+</body>
+
+</html>
