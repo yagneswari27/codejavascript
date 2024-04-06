@@ -1,0 +1,48 @@
+.bulb-image{
+    width:220px;
+    height: 280px;
+}
+.cat-image{
+    width:500Px;
+    height: 300px;
+}
+.background{
+    background-color: black;
+}
+.custmo-button{
+    color:white;
+  background-color:red;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  width: 99px;
+  height: 44px;
+  border-radius: 8px;
+  margin-left: 16px;
+
+}
+.custmo-button1{
+    color:black;
+  background-color:white;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: bold;
+  width: 99px;
+  height: 44px;
+  border-radius: 10px;
+  margin-left: 16px;
+
+}
+.switch-board{
+    color:black;
+    background-color:white ;
+    border-radius:15px ;
+    padding:10px ;
+    width: 294px;
+  height: 139px;
+}
+.heading{
+    color:black;
+    font-family: 'Roboto';
+    font-size:24px ;
+}
